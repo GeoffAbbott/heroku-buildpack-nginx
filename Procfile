@@ -1,1 +1,1 @@
-heroku ps:scale web=1
+web: bin/start-nginx bundle exec unicorn -c config/unicorn.rb
